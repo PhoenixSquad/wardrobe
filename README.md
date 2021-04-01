@@ -42,3 +42,19 @@ And I can remove any Item from the list and control the quantity
 - we can save the choosen products in the locale storage then display them to the cart page also we will display the total in the same page 
 - we can do function to remove the product from the local storage and render the table again with the new changes 
 
+
+## Our pages wireframes:
+### Main page
+![image](https://user-images.githubusercontent.com/57394982/113337864-03b7f480-9331-11eb-8f80-e7843ba09b1f.png)
+### Collection page 
+![screencapture-wireframe-cc-0eI4kw-2021-04-01-20_33_10](https://user-images.githubusercontent.com/57394982/113338998-8b523300-9332-11eb-8bd3-36691a62a1ba.png)
+
+### Cart page
+![cart ](https://user-images.githubusercontent.com/57394982/113338172-68734f00-9331-11eb-9473-d817645fe886.png)
+### About page 
+![screencapture-wireframe-cc-WAdiSm-2021-04-01-21_35_16](https://user-images.githubusercontent.com/57394982/113339080-a45ae400-9332-11eb-82b2-dfe77f5f6eb5.png)
+
+
+
+
+
