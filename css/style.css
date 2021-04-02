@@ -1,0 +1,50 @@
+body {
+    width: 100%;
+   
+}
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+.upperContent {
+    display: flex;
+    text-align: center;
+    
+    margin-top: 100px;
+}
+.upperContent div {
+    width: 100%;
+    margin: 0 5px;
+    background-color: brown;
+    height: 400px;
+}
+#men {
+    background-image: url(https://www.luxurytraveldiary.com/wp-content/uploads/2016/10/men-fashion-dressing-the-luxury-male-traveller-3.jpg);
+  background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+#women {
+    background-image: url(https://www.economy.pk/wp-content/uploads/2020/11/Fashion-Icon.jpg);
+  background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+#kids {
+    background-image: url(https://www.smallchangeconsignments.com/wp-content/uploads/2020/12/AAB_FashionMamas_KidsFashionFair_900x600.jpg);
+  background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.upperContent p {
+    background-color: rgba(0, 0, 0, 0.356);
+    height: 100%;
+}
+.upperContent p span {
+    position: relative;
+    top: 45%;
+    font-size: 50px;
+    font-weight: 700;   
+    color: white;
+}
