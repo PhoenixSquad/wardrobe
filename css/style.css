@@ -1,6 +1,7 @@
 html{
     width: 85%;
     margin: auto;
+    scroll-behavior: smooth;
 }
 body {
  box-sizing: border-box;
@@ -8,6 +9,34 @@ body {
 main{
  width: 100%;
 }
+.subNav nav{
+  width: 60%;
+  margin: auto;
+  margin-bottom: 100px;
+  /* background-color: red; */
+  box-shadow: 0px 2px 4px #00000061;
+  height: fit-content;
+  text-align: center;
+}
+.subNav nav ul{
+  display: flex;
+  justify-content: center;
+  
+}
+.subNav nav ul li{
+  margin: 3px;
+}
+.subNav nav ul li a{
+  /* float: left; */
+  margin: 5px 30px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: lighter;
+  font-size: 1.5em;
+}
+
+
+
 
 .upperContent {
   padding: 10px;
