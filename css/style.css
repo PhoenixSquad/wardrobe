@@ -1,3 +1,13 @@
+
+html {
+    width: 85%;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 30px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -13,6 +23,8 @@ ul {
   }
   li {
     float: right;
+      margin-right: 3%;
+    padding-left: 50px;
   }
   li a {
     display: block;
@@ -20,6 +32,10 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
     margin-top: 30px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bolder;
+    font-size: 30px;
+  
   }
   
 
@@ -133,6 +149,9 @@ main h1 {
     text-align: center;
     font-weight: bolder;
     margin-bottom: 1%;
+    color: #f3722c;
+    margin-top:  50px;
+    margin-bottom: 30px;
 }
 .cat {
     width: 29%;
@@ -188,28 +207,71 @@ main h1 {
 
 
 section {
-    margin-top: 20px;
+    /* margin-top: 100px; */
+    margin-bottom:  40px;
 
 }
 
 #leftCol {
-
+margin-top: 20px;
     width: 48%;
     float: left;
-    margin-left: 1%;
+    margin-left: 5%;
     margin-right: 1%;
     /* height: 500px; */
+    border-radius: 5px;
+    margin-bottom:  40px;
+
 }
 
 
 
 .rightcor {
-    width: 48%;
+    margin-top: 20px;
+    width: 40%;
     float: left;
-    margin-left: 1%;
+    margin-left: 2%;
     margin-right: 1%;
-    
+    margin-bottom:  40px;
 
 
 }
 
+.rightcor img {
+ width: 100%;
+ 
+}
+
+
+
+
+footer {
+    clear: both;
+    background-color:  #a5a58d;
+    padding: 40px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px 2px gray;
+
+
+}
+ footer i {
+     padding: 15px;
+ }
+ footer h4 {
+     margin-top: 60px;
+     margin-left: -10px;
+ }
+ footer i a {
+    font-size: 25px;
+ text-decoration: none;
+ color: #001d3d;
+
+
+}
+
+
+a:hover {
+    text-decoration: underline;
+    color: #eb5e28;
+
+}
