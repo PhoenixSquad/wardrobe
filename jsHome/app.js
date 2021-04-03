@@ -1,4 +1,5 @@
 'use strict';
+
 var slideIndex = 0;
 showSlides();
 
