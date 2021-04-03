@@ -78,7 +78,7 @@ ul {
 }
 
 
-main h1 {
+main h1#sentence{
     clear: both;
     font-family: 'Tangerine', cursive;
     font-size: 40px;
@@ -373,3 +373,69 @@ article p {
   margin-top: 20px;
 }
 
+
+.leftColumn {
+  width: 70%;
+  float: left;
+  border: solid;
+  border-radius: 20px;
+  margin-right: 5%;
+  position: relative;
+  margin-bottom: 3%;
+  font-family: 'Shadows Into Light', cursive;
+
+}
+.rightColumn{
+  width: 25%;
+  float: left;
+  border: solid;
+  border-radius: 20px;
+  padding: 1.5%;
+  font-family: 'Shadows Into Light', cursive;
+  margin-bottom: 3%;
+
+}
+
+.leftColumn p{
+  text-align: center;
+  width: 100%;
+  font-size: 23px;
+}
+
+.leftColumn p span{
+  margin-right: 60%;
+  font-size: 35px;
+
+}
+.leftColumn>p:first-of-type>i{
+  width: 20%;
+  margin-top: 1%;
+  margin-right: -5%;
+}
+input{
+  padding: 15px;
+  background-color: #84af99;
+  border-radius: 5px;
+  margin: 15px;
+}
+h2{
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+h3{
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+h4{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+body > main > div.rightColumn > form>select{
+  padding: 8px;
+  font-size: 18px;
+}
+body > main > div.rightColumn > form>select:focus{
+  background-color: #84af99;
+}
