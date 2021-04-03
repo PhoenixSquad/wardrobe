@@ -167,10 +167,12 @@ main h1 {
 .container  {
     border-top: double;
     border-top-width: 25px;
-   
   
 }
 
+ .container , .container1 , .container2 {
+
+ }
 
 
 .overlay  , .overlay1, .overlay2 {
@@ -269,9 +271,87 @@ footer {
 
 }
 
-
+/* 
 a:hover {
     text-decoration: underline;
     color: #eb5e28;
 
+} */
+
+
+article {
+  margin-top: 20px;
+}
+
+article ul {
+  clear: both;
+margin-bottom: 30px;
+
+  transform: translate(-60%);
+
+}
+
+
+
+
+article ul li {
+  font-size: 2em;
+  font-weight: bolder;
+  transform-origin: left;
+  animation: animate 6s infinite;
+  font-family: 'Courgette', cursive;
+  color: #284b63;
+}
+
+
+@keyframes animate {
+  0% 
+  {
+    opacity : 0 ; 
+
+  }
+
+   50% 
+   {
+     opacity: 1;
+
+   }
+
+   100% {
+     opacity: 0;
+   }
+}
+
+
+
+article ul li:nth-child(1)
+{
+  animation-delay: .8s;
+}
+
+
+article ul li:nth-child(2)
+{
+  animation-delay: .6s;
+}
+
+
+article ul li:nth-child(3)
+{
+  animation-delay: .4s;
+}
+
+
+article ul li:nth-child(4)
+{
+  animation-delay: 0s;
+}
+
+article p {
+  font-family: 'Courgette', cursive;
+    font-size: 2em;
+  font-weight: bolder;
+  color: #284b63;
+  text-align: center;
+  margin-top: 20px;
 }
