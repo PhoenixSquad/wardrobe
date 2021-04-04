@@ -8,6 +8,7 @@ html {
 main {
   width: 85%;
   margin: 0 auto;
+  padding-top: 120px;
 }
 .navBar {
   width: 100%;
@@ -21,37 +22,24 @@ main {
 .navBar li {
   margin-top: -15px;
 }
- .homenav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /* position: fixed; */
-    background-color: white;
-    box-shadow: rgba(128, 128, 128, 0.63) 0px 0px  10px ;
-    clear: both;
-  }
-
-/* .homenav nav {
-  overflow: hidden;   background-color: #333;   position: fixed;
-} */
 
 
 
 
 
 
-  .homenav ul img {
+
+  .navBar ul img {
     float: left;
     
     
   }
-  .homenav li {
+  .navBar li {
     float: right;
     margin-right: 3%;
     margin-left: 3%;
   }
-  .homenav li a {
+  .navBar li a {
     display: block;
     text-align: center;
     padding: 14px 16px;
@@ -337,29 +325,7 @@ margin-top: 20px;
 
 
 
-footer {
-    clear: both;
-    background-color:  #a5a58d;
-    padding: 40px;
-    margin-top: 20px;
-    box-shadow: 0px 0px 10px 2px gray;
 
-
-}
- footer i {
-     padding: 15px;
- }
- footer h4 {
-     margin-top: 60px;
-     margin-left: -10px;
- }
- footer i a {
-    font-size: 25px;
- text-decoration: none;
- color: #001d3d;
-
-
-}
 
 
 body > header > div:nth-child(1) > nav > ul > li > a:hover {
@@ -535,24 +501,103 @@ input{
   border-radius: 5px;
   margin: 15px;
 }
-h2{
+.aboutUsInfo h2{
   font-size: 35px;
   margin-bottom: 20px;
 }
-h3{
-  font-size: 25px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-h4{
-  font-size: 20px;
-  padding-bottom: 10px;
-}
+
+
 body > main > div.rightColumn > form>select{
   padding: 8px;
   font-size: 18px;
 }
 body > main > div.rightColumn > form>select:focus{
   background-color: #84af99;
+}
+footer{
+  clear: both;
+  margin-top: 20px;
+  background-image : url(../img/footer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(228, 228, 228);
+  box-shadow: 0px 0px 15px #373737;
+}
+.footerContainer{
+  padding: 0 350px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.897);
+}
+.footerContainer .upperFooterContent{
+  width: 100%;
+  display: table;
+  height: 100%;
+}
+.upperFooterContent .rightFooterContainer, .upperFooterContent .leftFooterContainer{
+  display: table-cell;
+  width: 50%;
+  padding: 20px;
+
+}
+.upperFooterContent .rightFooterContainer{
+  /* background-color: blue; */
+  /* padding-left: 30px; */
+  /* border-right: 2px solid gray; */
+}
+.upperFooterContent .leftFooterContainer{
+  /* background-color: rgb(255, 0, 0); */
+  text-align: left;
+  padding: 25px 100px;
+}
+.footerContainer .bottomFooterContent{
+  text-align: center;
+  border-top: 2px solid gray;
+  /* background-color: black; */
+  color: rgb(5, 0, 0);
+  height: 20%;
+  margin-top: 10px;
+}
+.locationInfo ,.numberInfo,.mailInfo{
+  display: flex;
+  margin :10px
+}
+.leftFooterContainer div i{
+  margin: 10px;
+  padding: 10px;
+ height: 50px;
+ width: 50px;
+  text-align: center;
+  /* border: 1px solid red; */
+ border-radius: 50px;
+  background-color: rgb(65, 65, 65);
+}
+.leftFooterContainer div p{
+  /* border: 1px solid rgb(119, 0, 255); */
+  font-weight: 700;
+  font-size: 1.2em;
+  padding: 27px 0;
+}
+
+.aboutUsInfo h2{
+  font-weight: 700;
+  font-size: 2.5em;
+  margin: 20px;
+}
+.aboutUsInfo .footerDesc{
+ font-size: 22px;
+  margin: 20px;
+  /* border:1px solid red */
+}
+.iconsDiv{
+  /* display: table; */
+  width: 40%;
+ margin-left: 20px;
+}
+.iconsDiv a{
+  color: inherit;
+}
+.iconsDiv a i{
+  margin: 3px;
+  /* color: inherit; */
 }

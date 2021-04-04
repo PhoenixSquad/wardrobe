@@ -15,15 +15,3 @@ function showSlides() {
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 
-<<<<<<< HEAD
-=======
-
-
-
-
-// // sticky nav bar
-// window.addEventListener('scroll' , function(){
-//   let header = document.querySelector('.homenav');
-//   header.classList.toggle('sticky' , window.scrollY >0);
-// });
->>>>>>> 9cc61b7ad9b31e3b01a56fac98357b4edbe0ea7a

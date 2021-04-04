@@ -1,44 +1,15 @@
-html{
-    width: 95%;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
 
-  ul img {
-    float: left;
-    margin-top: -20px;
-    
-  }
-  li {
-    float: right;
-    margin-right: 3%;
-    margin-left: 3%;
-  }
-  li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    margin-top: 30px;
-    font-family: 'Shadows Into Light', cursive;
-    font-weight: bolder;
-    font-size: 30px;
-    color: rgb(85, 84, 84);
-}
 body{
     width: 100%;
 }
 main {
     margin: 0;
-    width: 100%;
-    background-color: rgb(255, 252, 228);
+    width: 90%;
+    margin: 0 auto;
+   padding-top: 0;
 }
+
+
 .aboutMainContent{
     width: 80%;
     margin: 0 auto;
@@ -46,10 +17,10 @@ main {
 }
  .heroImage{
     background-image: url(../img/aboutUsImg.jpg) ;
-    background-size: 100% 400px;
+    background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 400px;
+    height: 700px;
 }
 .centered{
     position: relative;
@@ -58,13 +29,15 @@ main {
     height: 100%;
 }
 .centered span{
-    font-family: 'Lobster', cursive;
+    font-family: 'Tangerine', cursive;
+    font-weight: 900;
     position: absolute;
-    top: 30%;
+    top: 37%;
     left: 45%;
     color: white;
-    font-size: 5em;
+    font-size: 6em;
     text-align: center;
+    
 }
 
 .aboutDescription p{
@@ -147,3 +120,5 @@ justify-content: center;
       font-size: 1.2rem;
       font-weight: 700;
   }
+
+ 
