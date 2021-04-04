@@ -295,16 +295,16 @@ article {
   margin-top: 20px;
 }
 
-article ul {
+/* article ul {
   clear: both;
   margin-bottom: 30px;
   transform: translate(-38%,-4%);
   padding-bottom: 5px;
-}
+} */
 
 
 
-
+/* 
 article ul li {
   font-size: 2em;
   font-weight: bolder;
@@ -312,9 +312,9 @@ article ul li {
   animation: animate 3s infinite;
   font-family: 'Courgette', cursive;
   color: #284b63;
-}
+} */
 
-
+/* 
 @keyframes animate {
   0% 
   {
@@ -331,37 +331,76 @@ article ul li {
    100% {
      opacity: 0;
    }
-}
+} */
 
 
-
+/* 
 article ul li:nth-child(1)
 {
   animation-delay: .3s;
   margin-left: 1%;
-}
+} */
 
-
+/* 
 article ul li:nth-child(2)
 {
   animation-delay: .2s;
   margin-left: 1%;
-}
+} */
 
-
+/* 
 article ul li:nth-child(3)
 {
   animation-delay: .1s;
   margin-left: 1%;
 
-}
+} */
 
-
+/* 
 article ul li:nth-child(4)
 {
   animation-delay: 0s;
   margin-left: 1%;
 
+} */
+
+.caption  h1{
+  clear: both;
+  font-size: 10vw;
+  color: white;
+  text-align: center;
+  -webkit-text-stroke: .3vw white;
+
+text-transform: uppercase;
+position: relative;
+}
+
+
+ .caption h1::before {
+  content:attr(data-text);
+  position: absolute;
+  top:0;
+  left: 19.5%;
+  width: 0;
+  height: 100%;
+  -webkit-text-stroke: 0vw rgb(73, 78, 83);
+  color: #284b63;
+border-right:2px solid #8f98be ;
+overflow: hidden;
+animation: animate1 3s linear infinite;
+
+}
+ 
+@keyframes animate1 {
+
+  0% , 10% , 100%{
+    width: 0;
+  }
+  
+  70% , 90% 
+  {
+    width: 60%;
+  }
 }
 
 article p {
