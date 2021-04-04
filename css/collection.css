@@ -1,5 +1,5 @@
 html{
-    width: 85%;
+    width: 95%;
     margin: auto;
     scroll-behavior: smooth;
 }
@@ -8,6 +8,35 @@ body {
 }
 main{
  width: 100%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul img {
+  float: left;
+  margin-top: -20px;
+  
+}
+li {
+  float: right;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 30px;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bolder;
+  font-size: 30px;
+  color: rgb(85, 84, 84);
+
 }
 .subNav nav{
   width: 60%;
