@@ -21,24 +21,37 @@ main {
 .navBar li {
   margin-top: -15px;
 }
-ul {
+ .homenav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    /* position: fixed; */
+    background-color: white;
+    box-shadow: rgba(128, 128, 128, 0.63) 0px 0px  10px ;
+    clear: both;
   }
 
-  ul img {
+/* .homenav nav {
+  overflow: hidden;   background-color: #333;   position: fixed;
+} */
+
+
+
+
+
+
+  .homenav ul img {
     float: left;
     
     
   }
-  li {
+  .homenav li {
     float: right;
     margin-right: 3%;
     margin-left: 3%;
   }
-  li a {
+  .homenav li a {
     display: block;
     text-align: center;
     padding: 14px 16px;
@@ -66,7 +79,7 @@ ul {
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
-  /* position: relative; */
+  position: relative;
   margin: auto;
   height: 10%;
 }
@@ -85,12 +98,12 @@ ul {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .6}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .6}
   to {opacity: 1}
 }
 
