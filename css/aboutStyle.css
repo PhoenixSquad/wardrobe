@@ -44,6 +44,7 @@ main {
     margin: 20px auto;
     text-align: center;
     font-size: 2em;
+    font-family: 'COURGETTE', 'Times New Roman', Times, serif;
 }
 .aboutDescription p strong{
     font-weight: bold;
@@ -107,18 +108,23 @@ justify-content: center;
       margin: 50px auto;
   }
   .left , .right {
-      width: 85%;
+      width: 75%;
       margin: 0 auto;
   }
 
   .memberDesc p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     /* font-weight: 700; */
     padding: 5px;
+    /* font-style: italic; */
+  }
+  .memberMajor{
+      font-style: italic;
   }
   .memberDesc p strong{
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       font-weight: 700;
+      font-style: initial;
   }
 
  
