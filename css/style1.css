@@ -58,6 +58,7 @@ main {
 .slideshow-container {
     clear: both;
    padding-top:80px ;
+   position: relative;
   
 }
 
@@ -95,6 +96,15 @@ main {
   to {opacity: 1}
 }
 
+#slideshow-text{
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  top: 55%;
+  margin-left: 24%;
+  font-size: 322%;
+  background-color: rgb(255 255 255 / 70%);
+}
 
 main h1#sentence{
     clear: both;
