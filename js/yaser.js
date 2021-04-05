@@ -12,7 +12,6 @@ function showMenProducts(event){
   event.preventDefault();
   menProduct.style.display='block';
   menFilter.style.background='#284b6396';
-  menFilter.style.padding='15px';
   womenProduct.style.display='none';
   womenProduct.style.padding='0px';
   womenFilter.style.background='white';
@@ -25,7 +24,6 @@ function showWomenProducts(event){
   event.preventDefault();
   womenProduct.style.display='block';
   womenFilter.style.background='#284b6396';
-  womenFilter.style.padding='15px';
   menProduct.style.display='none';
   menFilter.style.background='white';
   menFilter.style.padding='0px';
@@ -38,7 +36,6 @@ function showKidsProducts(event){
   event.preventDefault();
   kidsProduct.style.display='block';
   kidsFilter.style.background='#284b6396';
-  kidsFilter.style.padding='15px';
   womenProduct.style.display='none';
   womenProduct.style.padding='0px';
   womenFilter.style.background='white';
