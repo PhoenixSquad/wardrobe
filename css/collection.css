@@ -1,0 +1,183 @@
+html{
+    width: 100%;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+body {
+ box-sizing: border-box;
+}
+main{
+ width: 95%;
+}
+/* .collectionNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.collectionNav ul img {
+  float: left;
+  margin-top: -20px;
+  
+}
+.collectionNav li {
+  float: right;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+.collectionNav li a {
+  display: block;
+  text-align: center;
+  /* padding: 16px 18px; */
+  /* text-decoration: none;
+  margin-top: 30px;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  color: rgb(85, 84, 84);
+  padding: 20px;
+
+} */
+
+
+/* .collectionNav li a:hover {
+
+
+text-decoration: underline;
+color: #284b63f6;
+font-size: 28px;
+
+
+}  */
+
+
+
+.subNav nav{
+  width: 35%;
+  margin: auto;
+  margin-bottom: 100px;
+  /* background-color: red; */
+  box-shadow: 0px 2px 4px #00000061;
+  height: fit-content;
+  text-align: center;
+
+}
+
+.subNav nav ul li a:hover {
+  background-color: #284b6396;
+  border-radius: 3px;
+  text-decoration: underline ;
+  font-size: 28px;
+  padding: 15px;
+
+}
+
+
+
+
+
+
+.subNav nav ul{
+  display: flex;
+  justify-content: center;
+  border-top: #284b6396 2px solid ;
+  border-right: #284b6396 2px solid ;
+  border-left: #284b6396 2px solid ;
+  
+}
+.subNav nav ul li{
+  margin: 3px;
+  padding: 28px;
+
+}
+.subNav nav ul li a{
+  /* float: left; */
+  margin: 5px 30px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: lighter;
+  font-size: 25px;
+
+}
+
+
+
+
+.upperContent {
+  padding: 10px;
+  margin: 0 10px;
+}
+.upperContent h1 {
+  font-size:3em;
+}
+
+
+  .products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+   
+    
+    
+    padding: 10px;
+  }
+  
+  .grid-item { 
+    margin:0 10px;
+    height: 90%;
+    position: relative;
+  }
+  
+  .grid-item .imgBox{
+    height: 100%;
+    
+  }
+  .grid-item .imgBox img{
+    width: 100%;
+    height: 100%;
+   
+
+  }
+
+  .grid-item .imgBox img:hover {
+    box-shadow: 0px 0px 10px #00000094;
+   
+  }
+
+
+
+
+
+
+
+ .grid-item .desc {
+  position: absolute;
+  left: 1%;
+  bottom: 0%;
+  margin: 10px;
+  font-weight: 900;
+  font-size: 1.4em ; 
+    max-width: 60%;
+}
+
+.price-addToCartBtn {
+  position: absolute;
+  text-align: center;
+  right: 1%;
+  bottom:1%;
+  font-weight: 700;
+  font-size: 1.9em;
+}
+.addToCartBtn button {
+  font-weight: 600;
+font-size: 0.5em;
+padding: 5px 18px;
+height: 35px;
+color: white;
+background-color: rgba(29, 29, 29, 0.993);
+
+}
+.addToCartBtn button:hover {
+  color: #eb5e28;
+  background-color: black;
+}

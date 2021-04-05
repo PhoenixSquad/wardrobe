@@ -11,9 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
     <link rel="icon" href="img/mylogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="./css/style1.css">
 
 
@@ -21,74 +25,73 @@
 
 <body>
     <header>
-        <div>
-        <nav >
-            <ul>
-                <img src="img/logo.jpg" alt="logo WarDrobe" style="width: 17%;">
-                
-                <li><a href="www.google.com"> Cart </a> </li>
-                <li><a href=""> About us </a></li>
-                <li><a href=""> Collection </a></li>
-                <li><a href=""> Home </a></li>
-            </ul>
-        </nav>
+        <div class="navBar">
+            <nav>
+                <ul>
+                   <a href="index.html"><img src="img/newLogo.jpg" alt="logo WarDrobe" style="width: 7%; height:80px"></a> 
+
+                    <li><a href="cart.html" class="nav-link"> Cart </a> </li>
+                    <li><a href="About-Us.html" class="nav-link"> About us </a></li>
+                    <li><a href="collectionPage.html" class="nav-link"> Collection </a></li>
+                    <li><a href="index.html" class="nav-link"> Home </a></li>
+                </ul>
+            </nav>
         </div>
-
-    </header>
-
-
-    <main>
-         
         <div class="slideshow-container">
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-               
-                <img src="img/shopping .jpg"
-                    style="width:100%   ; height: 650px;">
-                <!-- <div class="text">Caption Text</div> -->
+
+                <img src="img/shopping .jpg" style="width:100%   ; height:750px;">
+                <div class="text">Caption Text</div>
             </div>
 
             <div class="mySlides fade">
-                <img src="img/KidwithHat.jpg"
-                    style="width:100%  ; height: 650px; " >
+                <img src="img/KidwithHat.jpg" style="width:100%  ; height: 750px; ">
                 <!-- <div class="text">Caption Two</div> -->
             </div>
 
             <div class="mySlides fade">
-                <img src="img/group.jpg"
-                    style="width:100%  ; height: 650px;">
+                <img src="img/group.jpg" style="width:100%  ; height: 750px;">
                 <!-- <div class="text">Caption Three</div> -->
             </div>
+            <h1 id="slideshow-text">NEW COLLECTIONS EVERY MONTH</h1>
 
-           
-           
+
         </div>
         <br>
+    </header>
+
+
+    <main>
+
+
 
         <h1 id="sentence"> What you wear is how you present yourself to the world, <br>
             especially today, when human contacts are so quick. <br>
             Fashion is instant language. </h1>
 
         <div class="container">
-            <img class="cat" src="img/Man.jpg" alt="">
+            <a href="collectionPage.html#womenProduct"><img class="cat" src="img/Man.jpg" alt=""></a>
             <div class="text"><a href="">Men Collection</a></div>
         </div>
 
         <div class="container1">
-            <img class="cat" src="img/i2.jpg" alt="image">
+            <a href=""><img class="cat" src="img/i2.jpg" alt="image"></a>
             <div class="text1"><a href="">Women Collection</a></div>
         </div>
 
         <div class="container2">
-            <img class="cat" src="https://www2.hm.com/content/dam/kids_s03/march_2021/4073c/4073C-1x1-spring-blossom.jpg"alt="image1">
-             <div class="text2"><a href="">Kids Collection</a></div>
+            <a href=""> <img class="cat"
+                    src="https://www2.hm.com/content/dam/kids_s03/march_2021/4073c/4073C-1x1-spring-blossom.jpg"
+                    alt="image1"></a>
+            <div class="text2"><a href="">Kids Collection</a></div>
         </div>
 
-    </div>
+        </div>
 
-    <article>
-        <!-- <ul>
+        <article>
+            <!-- <ul>
             
             <li> Y</li>
             <li> A</li>
@@ -98,43 +101,102 @@
             <li> S</li>
         </ul> -->
 
+            <div class="caption">
+                <h1 data-text="STAY_SAFE">stay_safe</h1>
+                <p> and start shopping from home </p>
+            </div>
 
-        <div class="caption">
-            <h1  data-text="STAY_SAFE">stay_safe</h1>
-             <p> and shope from home </p>
-        </div>  
-        
-            </article>
-        
+        </article>
+
 
 
         <section>
-            <img style="height: 620px;" id="leftCol" src="https://hejdoll.com/wp-content/uploads/2020/07/hej-doll-2020-minimal-closet-featured-1.jpg" alt=" WarDrobe">
-            <div class="rightcor">
-            <img style="height: 310px; border-radius: 5px; " src="img/menShoes.jpg"
-                alt="men best sell">
-            <img style="height: 310px;  border-radius: 5px; " src="img/womenShoes.jpg" alt=" womens best selling">
+            <div id="leftCol">
+                <h1><span>OUR BEST <br> SELLERS</span> </h1>
+                
             </div>
+            
+            <div class="rightcor">
+                <div class="upperPhoto" onclick="location.href='collectionPage.html#menBestSeller';" style="cursor: pointer;">
+                    <div class="leftUpperPhoto">
+                        <h1>FOR <br> HIM </h1>
+                    </div>
+                    <div class="rightUpperPhoto"><img style="height: 310px; border-radius: 5px; "
+                            src="https://cdn.shopify.com/s/files/1/0646/1285/products/Capri-Nero-Lowtop-Men-Koio-1_1200x.progressive.png.jpg?v=1593118833"
+                            alt="men best sell"></div>
+                </div>
+                <div class="rightcor"></div>
+                    <div class="upperPhoto" onclick="location.href='collectionPage.html#womenBestSeller';" style="cursor: pointer;">
+                        <div class="leftUpperPhoto">
+                            <h1>FOR <br> HER </h1>
+                        </div>
+                        <div class="rightUpperPhoto"><img style="height: 310px; border-radius: 5px; "
+                                src="https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw84ef27e5/original/90_DST611N-DVT2P_KVO41_20_VirtusLeatherSandals-Sandals-versace-online-store_0_2.jpg?sw=748&sh=1050&sm=fit&sfrm=jpg"
+                                alt=" womens best selling"></div>
+                    </div>
+
+                  
+                </div>
 
         </section>
 
     </main>
 
-   
 
 
     <footer>
-
-        <i class="fab fa-instagram  fa-2x"> <a href=""> Instagram</a></i>
-        <i class="fab fa-facebook-square fa-2x"> <a href=""> Facebook</a></i>
-        <i class="fab fa-twitter-square fa-2x "> <a href=""> Twitter</a></i>
-        <i class="fab fa-whatsapp-square fa-2x "> +962 79555 5551</i>
-        <i class="fas fa-map-marked-alt  fa-2x"> <a href=""> Location</a></i>
-        <h4>&copy; WarDrobe </h4>
-
-    </footer>
-    <script src="./jsHome/app.js"></script>
-</body>
-
-
-</html>
+        <div class="footerContainer">
+          <div class="upperFooterContent">
+    
+            <div class="rightFooterContainer">
+              <div class="aboutUsInfo">
+                <h2>
+                  Wardrobe
+                </h2>
+                <div class="footerDesc">
+                  Grab it Now ! <br>
+                  Tomorrow it might be gone ! <br>
+                 We ship worldwide <i class="fa fa-globe"></i>
+                </div>
+                <div class="iconsDiv">
+                  <a href=""><i class="fab fa-facebook-square fa-3x"></i></a>
+                  <a href=""><i class="fab fa-twitter-square fa-3x"></i></a>
+                  <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
+                  <a href=""><i class="fab fa-github-square fa-3x"></i></a>
+                </div>
+              </div>
+    
+            </div>
+            <div class="leftFooterContainer">
+              <div class="locationInfo">
+                <i class="fa fa-map-marker-alt  fa-2x"></i>
+                <p>
+                  Amman-Jordan
+                </p>
+              </div>
+              <div class="numberInfo">
+                <i class="fa fa-phone-alt fa-2x"></i>
+                <p>
+                  +962 79555 5551
+                </p>
+              </div>
+              <div class="mailInfo">
+                <i class="fa fa-envelope fa-2x"></i>
+                <p>
+                  wardrobe@info.com
+                </p>
+              </div>
+    
+            </div>
+          </div>
+    
+          <!-- <div class="bottomFooterContent">
+            &copy; All Rights deserved
+          </div> -->
+    
+        </div>
+      </footer>
+    </body>
+    <script src="./js/app.js"></script>
+    
+    </html>

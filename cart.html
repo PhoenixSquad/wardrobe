@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
     <link rel="icon" href="img/mylogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="./css/style1.css">
 </head>
 <body>
     <header>
-        <div>
-            <nav >
+        <div class="navBar">
+            <nav>
                 <ul>
-                    <img src="img/logo.jpg" alt="logo WarDrobe" style="width: 17%;">
-                    
-                    <li><a href="www.google.com"> Cart </a> </li>
-                    <li><a href=""> About us </a></li>
-                    <li><a href=""> Collection </a></li>
-                    <li><a href=""> Home </a></li>
+                   <a href="index.html"><img src="img/newLogo.jpg" alt="logo WarDrobe" style="width: 7%; height:80px"></a> 
+
+                    <li><a href="cart.html" class="nav-link"> Cart </a> </li>
+                    <li><a href="About-Us.html" class="nav-link"> About us </a></li>
+                    <li><a href="collectionPage.html" class="nav-link"> Collection </a></li>
+                    <li><a href="index.html" class="nav-link"> Home </a></li>
                 </ul>
             </nav>
-            </div>
+        </div>
     </header>
     <main>
     <div class="leftColumn">
@@ -44,16 +52,59 @@
         </form>
     </div>
     </main>
+   
     <footer>
-
-        <i class="fab fa-instagram  fa-2x"> <a href=""> Instagram</a></i>
-        <i class="fab fa-facebook-square fa-2x"> <a href=""> Facebook</a></i>
-        <i class="fab fa-twitter-square fa-2x "> <a href=""> Twitter</a></i>
-        <i class="fab fa-whatsapp-square fa-2x "> +962 79555 5551</i>
-        <i class="fas fa-map-marked-alt  fa-2x"> <a href=""> Location</a></i>
-        <h4>&copy; WarDrobe </h4>
-
-    </footer>
-    <script src="jsHome/app.js"></script>
+        <div class="footerContainer">
+          <div class="upperFooterContent">
+    
+            <div class="rightFooterContainer">
+              <div class="aboutUsInfo">
+                <h2>
+                  Wardrobe
+                </h2>
+                <div class="footerDesc">
+                  Grab it Now ! <br>
+                  Tomorrow it might be gone ! <br>
+                 We ship worldwide <i class="fa fa-globe"></i>
+                </div>
+                <div class="iconsDiv">
+                  <a href=""><i class="fab fa-facebook-square fa-3x"></i></a>
+                  <a href=""><i class="fab fa-twitter-square fa-3x"></i></a>
+                  <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
+                  <a href=""><i class="fab fa-github-square fa-3x"></i></a>
+                </div>
+              </div>
+    
+            </div>
+            <div class="leftFooterContainer">
+              <div class="locationInfo">
+                <i class="fa fa-map-marker-alt  fa-2x"></i>
+                <p>
+                  Amman-Jordan
+                </p>
+              </div>
+              <div class="numberInfo">
+                <i class="fa fa-phone-alt fa-2x"></i>
+                <p>
+                  +962 79555 5551
+                </p>
+              </div>
+              <div class="mailInfo">
+                <i class="fa fa-envelope fa-2x"></i>
+                <p>
+                  wardrobe@info.com
+                </p>
+              </div>
+    
+            </div>
+          </div>
+    
+          <!-- <div class="bottomFooterContent">
+            &copy; All Rights deserved
+          </div> -->
+    
+        </div>
+      </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

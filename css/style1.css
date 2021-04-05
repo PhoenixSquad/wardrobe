@@ -1,29 +1,45 @@
 
 html {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+  
 }
-body{
-  background-color: #ffffff05;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
 
-  ul img {
+main {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.navBar {
+  width: 100%;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  box-shadow: 0px 1px 20px 7px grey;
+ 
+}
+
+.navBar li {
+  margin-top: -15px;
+}
+
+
+
+
+
+
+
+  .navBar ul img {
     float: left;
-    margin-top: -20px;
+    
     
   }
-  li {
+  .navBar li {
     float: right;
     margin-right: 3%;
     margin-left: 3%;
   }
-  li a {
+  .navBar li a {
     display: block;
     text-align: center;
     padding: 14px 16px;
@@ -41,15 +57,18 @@ ul {
 
 .slideshow-container {
     clear: both;
-    
+   padding-top:80px ;
+   position: relative;
+  
 }
+
 
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
-  /* position: relative; */
+  position: relative;
   margin: auto;
   height: 10%;
 }
@@ -68,24 +87,33 @@ ul {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .6}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .6}
   to {opacity: 1}
 }
 
+#slideshow-text{
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  top: 55%;
+  margin-left: 24%;
+  font-size: 322%;
+  background-color: rgb(255 255 255 / 70%);
+}
 
 main h1#sentence{
     clear: both;
     font-family: 'Tangerine', cursive;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     font-weight: bolder;
     margin-bottom: 1%;
-    color: #f3722c;
+      color: #284b63;
     margin-top:  50px;
     margin-bottom: 30px;
 }
@@ -120,18 +148,19 @@ main h1#sentence{
  
 }
 /* kids Collection */
-body > main > div.container2 > img {
+body > main > div.container2 > a >img {
   display: block;
   width: 115%;
   height: 91%;
   border-radius: 10px;
 }
 
-.container2:hover img {
+.container2:hover  {
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
-  transform: scale(1.3);
-  opacity: 0.7;
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 10;
 }
 
 
@@ -154,7 +183,7 @@ body > main > div.container2 > div > a{
 }
 
 /* Women Collection */
-body > main > div.container1 > img {
+body > main > div.container1 > a > img {
   display: block;
   width: 105%;
   height: 91%;
@@ -162,11 +191,12 @@ body > main > div.container1 > img {
   margin-left: -6%;
 }
 
-.container1:hover img {
+.container1:hover  {
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
-  transform: scale(1.3);
-  opacity: 0.7;
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 10;
 }
 
 .text1  {
@@ -188,7 +218,7 @@ body > main > div.container1 > div > a{
 }
 
 /* Men Collection */
-body > main > div.container > img {
+body > main > div.container > a >img {
   display: block;
   width: 100%;
   height: 91%;
@@ -196,11 +226,12 @@ body > main > div.container > img {
   margin-left: -6%;
 }
 
-.container:hover img {
+.container:hover  {
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
-  transform: scale(1.3);
-  opacity: 0.7;
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 10;
 }
 
 .text  {
@@ -228,6 +259,11 @@ section {
 }
 
 #leftCol {
+  height: 645px;
+  background-image: url(https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1051&q=80);
+  background-repeat: no-repeat;
+background-position: center;
+  background-size: cover;
 margin-top: 20px;
     width: 48%;
     float: left;
@@ -236,6 +272,19 @@ margin-top: 20px;
     border-radius: 5px;
     margin-bottom:  40px;
 
+}
+#leftCol h1  {
+  background-color: rgba(0, 0, 0, 0.671);
+  height: 100%;
+  position: relative;
+}
+#leftCol h1 span {
+  text-align: center;
+  font-size: 70px;
+  color: white;
+  position: absolute;
+  left: 30%;
+  top: 40%;
 }
 
 
@@ -251,37 +300,42 @@ margin-top: 20px;
 
 }
 
-.rightcor img {
+.upperPhoto {
  width: 100%;
+ display: flex;
+ margin-bottom: -38px;
+ box-shadow: 1px 2px 12px 6px grey;
  
 }
-
-
-
-
-footer {
-    clear: both;
-    background-color:  #a5a58d;
-    padding: 40px;
-    margin-top: 20px;
-    box-shadow: 0px 0px 10px 2px gray;
-
-
+.leftUpperPhoto {
+  width: 40%;
+  height: 313px;
+  background-color: rgba(0, 0, 0, 0.753);
+  color: white;
+  position: relative;
 }
- footer i {
-     padding: 15px;
- }
- footer h4 {
-     margin-top: 60px;
-     margin-left: -10px;
- }
- footer i a {
-    font-size: 25px;
- text-decoration: none;
- color: #001d3d;
+.leftUpperPhoto h1 {
+  font-size: 57px;
+  font-family: 'Caveat', cursive;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.774);
+  font-weight: 700;
+  position: absolute;
+  left: 28%;
 
-
+  top: 35%;
+  
 }
+.rightUpperPhoto {
+  width:60% ;
+}
+.rightUpperPhoto img {
+  width: 100%;
+}
+
+
+
+
+
 
 
 body > header > div:nth-child(1) > nav > ul > li > a:hover {
@@ -304,17 +358,17 @@ article {
 
 
 
-
-/* article ul li {
+/* 
+article ul li {
   font-size: 2em;
   font-weight: bolder;
   transform-origin: left;
   animation: animate 3s infinite;
   font-family: 'Courgette', cursive;
   color: #284b63;
-}
+} */
 
-
+/* 
 @keyframes animate {
   0% 
   {
@@ -334,36 +388,35 @@ article {
 } */
 
 
-
-/* article ul li:nth-child(1)
+/* 
+article ul li:nth-child(1)
 {
   animation-delay: .3s;
   margin-left: 1%;
-}
+} */
 
-
+/* 
 article ul li:nth-child(2)
 {
   animation-delay: .2s;
   margin-left: 1%;
-}
+} */
 
-
+/* 
 article ul li:nth-child(3)
 {
   animation-delay: .1s;
   margin-left: 1%;
 
-}
+} */
 
-
+/* 
 article ul li:nth-child(4)
 {
   animation-delay: 0s;
   margin-left: 1%;
 
 } */
-
 
 .caption  h1{
   clear: both;
@@ -394,13 +447,14 @@ animation: animate1 3s linear infinite;
  
 @keyframes animate1 {
 
-0% , 10% , 100%{
-  width: 0;
-}
-
-70% , 90% 
-{
-  width: 60%;
+  0% , 10% , 100%{
+    width: 0;
+  }
+  
+  70% , 90% 
+  {
+    width: 63.5%;
+  }
 }
 
 
@@ -464,24 +518,103 @@ input{
   border-radius: 5px;
   margin: 15px;
 }
-h2{
+.aboutUsInfo h2{
   font-size: 35px;
   margin-bottom: 20px;
 }
-h3{
-  font-size: 25px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-h4{
-  font-size: 20px;
-  padding-bottom: 10px;
-}
+
+
 body > main > div.rightColumn > form>select{
   padding: 8px;
   font-size: 18px;
 }
 body > main > div.rightColumn > form>select:focus{
   background-color: #84af99;
+}
+footer{
+  clear: both;
+  margin-top: 20px;
+  background-image : url(../img/footer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(228, 228, 228);
+  box-shadow: 0px 0px 15px #373737;
+}
+.footerContainer{
+  padding: 0 350px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.897);
+}
+.footerContainer .upperFooterContent{
+  width: 100%;
+  display: table;
+  height: 100%;
+}
+.upperFooterContent .rightFooterContainer, .upperFooterContent .leftFooterContainer{
+  display: table-cell;
+  width: 50%;
+  padding: 20px;
+
+}
+.upperFooterContent .rightFooterContainer{
+  /* background-color: blue; */
+  /* padding-left: 30px; */
+  /* border-right: 2px solid gray; */
+}
+.upperFooterContent .leftFooterContainer{
+  /* background-color: rgb(255, 0, 0); */
+  text-align: left;
+  padding: 25px 100px;
+}
+.footerContainer .bottomFooterContent{
+  text-align: center;
+  border-top: 2px solid gray;
+  /* background-color: black; */
+  color: rgb(5, 0, 0);
+  height: 20%;
+  margin-top: 10px;
+}
+.locationInfo ,.numberInfo,.mailInfo{
+  display: flex;
+  margin :10px
+}
+.leftFooterContainer div i{
+  margin: 10px;
+  padding: 10px;
+ height: 50px;
+ width: 50px;
+  text-align: center;
+  /* border: 1px solid red; */
+ border-radius: 50px;
+  background-color: rgb(65, 65, 65);
+}
+.leftFooterContainer div p{
+  /* border: 1px solid rgb(119, 0, 255); */
+  font-weight: 700;
+  font-size: 1.2em;
+  padding: 27px 0;
+}
+
+.aboutUsInfo h2{
+  font-weight: 700;
+  font-size: 2.5em;
+  margin: 20px;
+}
+.aboutUsInfo .footerDesc{
+ font-size: 22px;
+  margin: 20px;
+  /* border:1px solid red */
+}
+.iconsDiv{
+  /* display: table; */
+  width: 40%;
+ margin-left: 20px;
+}
+.iconsDiv a{
+  color: inherit;
+}
+.iconsDiv a i{
+  margin: 3px;
+  /* color: inherit; */
 }
