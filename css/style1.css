@@ -471,6 +471,7 @@ article p {
   width: 70%;
   float: left;
   border: solid;
+  border-color: #284b63;
   border-radius: 20px;
   margin-right: 5%;
   position: relative;
@@ -482,9 +483,14 @@ article p {
   width: 25%;
   float: left;
   border: solid;
+  border-color: #284b63;
   border-radius: 20px;
   padding: 1.5%;
   font-family: 'Shadows Into Light', cursive;
+  color: #284b63;
+  
+  font-weight: bold;
+  font-size: 25px;
   margin-bottom: 3%;
 
 }
@@ -498,6 +504,8 @@ article p {
 .leftColumn p span{
   margin-right: 60%;
   font-size: 35px;
+  color: #284b63;
+  font-weight: bolder;
 
 }
 .leftColumn>p:first-of-type>i{
@@ -507,9 +515,11 @@ article p {
 }
 input{
   padding: 15px;
-  background-color: #84af99;
+  background-color: #284b63;
   border-radius: 5px;
   margin: 15px;
+  color: white;
+  font-weight: bolder;
 }
 .aboutUsInfo h2{
   font-size: 35px;
@@ -522,7 +532,8 @@ body > main > div.rightColumn > form>select{
   font-size: 18px;
 }
 body > main > div.rightColumn > form>select:focus{
-  background-color: #84af99;
+  background-color: #284b63;
+  color: white;
 }
 footer{
   clear: both;
@@ -610,4 +621,38 @@ footer{
 .iconsDiv a i{
   margin: 3px;
   /* color: inherit; */
+}
+
+/* Cart elements and Checkout */
+
+#itemList th {
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 50px;
+  /* background-color: #284b63; */
+  color: #284b63;
+  border-bottom: solid 1px;
+  padding-top: 10px;
+  font-family: 'Caveat', cursive;
+
+}
+#itemList select{
+  margin: 20px;
+}
+#itemList button{
+  padding: 5px;
+  background-color: #284b63;
+  color: white;
+  border-radius: 5px;
+}
+#itemList{
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.leftColumn{
+  background-image: url(https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1613243555988-441166d4d6fd%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjE3MDYzNjUz%26ixlib%3Drb-1.2.1%26q%3D80%26w%3D1080);
+  background-position-y: 45%;
+  background-position-x: -20%;
+  background-color: rgba(255, 255, 255, 0.692);
 }
