@@ -54,7 +54,7 @@ font-size: 28px;
 
 
 .subNav nav{
-  width: 35%;
+  width: 27%;
   margin: auto;
   margin-bottom: 100px;
   /* background-color: red; */
@@ -65,7 +65,7 @@ font-size: 28px;
 }
 
 .subNav nav ul li a:hover {
-  background-color: #284b6396;
+  background-color: #284b63;
   border-radius: 3px;
   text-decoration: underline ;
   font-size: 25px;
@@ -89,9 +89,10 @@ font-size: 28px;
   list-style: none;
   display: flex;
   justify-content: center;
-  border-top: #284b6396 2px solid;
-  border-right: #284b6396 2px solid;
-  border-left: #284b6396 2px solid;
+  border-top: #284b6396 3px solid;
+  border-right: #284b6396 3px solid;
+  border-left: #284b6396 3px solid;
+  
   
   
 }
@@ -108,15 +109,15 @@ font-size: 28px;
 }
 .subNav nav ul li a{
   /* float: left; */
-  margin: 5px 30px;
+  /* margin: 5px 30px; */
   text-decoration: none;
   color: inherit;
   font-weight: bold;
   font-size: 25px;
   font-family: 'Shadows Into Light', cursive;
-
-  
+  padding: 10px 15px;
 }
+
 
 .subNav nav ul li i{
   font-weight: bolder;
@@ -146,7 +147,7 @@ font-size: 28px;
   
   .grid-item { 
     margin:0 10px;
-    height: 90%;
+    height: 68%;
     position: relative;
   }
   
@@ -173,7 +174,7 @@ font-size: 28px;
 
 
  .grid-item .desc {
-  position: absolute;
+  /* position: absolute; */
   left: 1%;
   bottom: 0%;
   margin: 10px;
@@ -192,10 +193,10 @@ font-size: 28px;
   font-size: 1.9em;
 transform: scale(0);
 }
-.grid-item:hover .desc {
+/* .grid-item:hover .desc {
   transform: scale(0);
-}
-.grid-item:hover .price-addToCartBtn {
+} */
+.imgBox:hover ~ .price-addToCartBtn {
   transform:scale(1) ;
   
 }
