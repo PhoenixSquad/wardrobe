@@ -745,6 +745,7 @@ margin-left: 20px;
 color: inherit;
 }
 .iconsDiv a i{
+<<<<<<< HEAD
   margin: 3px;
   /* color: inherit; */
 }
@@ -781,4 +782,35 @@ color: inherit;
   background-position-y: 45%;
   background-position-x: -20%;
   background-color: rgba(255, 255, 255, 0.692);
+=======
+margin: 3px;
+/* color: inherit; */
+}
+
+body > footer > div > div > div.rightFooterContainer > div > div.iconsDiv{
+
+  color: rgb(228, 228, 228);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width: 100%;
+  margin-left: 20px;
+}
+
+body > footer > div > div > div.rightFooterContainer > div > div.footerDesc
+{
+  color: rgb(228, 228, 228);
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  font-size: 22px;
+  margin: 20px;
+  width: 120%;
+>>>>>>> 46cf528f11584aba674730cd082c64a82e0e0594
 }
