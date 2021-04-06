@@ -19,8 +19,26 @@ function showMenProducts(event){
   kidsProduct.style.display='none';
   kidsFilter.style.background='white';
   kidsFilter.style.color='black';
+  menFilter.removeEventListener('click',showMenProducts);
+  menFilter.addEventListener('click',unactiveMenFilter);
+  womenFilter.addEventListener('click',showWomenProducts);
+  kidsFilter.addEventListener('click',showKidsProducts);
 
 }
+function unactiveMenFilter(event){
+  event.preventDefault();
+  menProduct.style.display='block';
+  menFilter.style.background='white';
+  menFilter.style.color='black';
+  womenProduct.style.display='block';
+  womenFilter.style.background='white';
+  womenFilter.style.color='black';
+  kidsProduct.style.display='block';
+  kidsFilter.style.background='white';
+  kidsFilter.style.color='black';
+  menFilter.addEventListener('click',showMenProducts);
+}
+
 womenFilter.addEventListener('click',showWomenProducts);
 function showWomenProducts(event){
   event.preventDefault();
@@ -33,7 +51,23 @@ function showWomenProducts(event){
   kidsProduct.style.display='none';
   kidsFilter.style.background='white';
   kidsFilter.style.color='black';
-
+  womenFilter.removeEventListener('click',showWomenProducts);
+  womenFilter.addEventListener('click',unactiveWomenFilter);
+  menFilter.addEventListener('click',showMenProducts);
+  kidsFilter.addEventListener('click',showKidsProducts);
+}
+function unactiveWomenFilter(event){
+  event.preventDefault();
+  womenProduct.style.display='block';
+  womenFilter.style.background='white';
+  womenFilter.style.color='black';
+  menProduct.style.display='block';
+  menFilter.style.background='white';
+  menFilter.style.color='black';
+  kidsProduct.style.display='block';
+  kidsFilter.style.background='white';
+  kidsFilter.style.color='black';
+  womenFilter.addEventListener('click',showWomenProducts);
 }
 kidsFilter.addEventListener('click',showKidsProducts);
 function showKidsProducts(event){
@@ -47,5 +81,21 @@ function showKidsProducts(event){
   menProduct.style.display='none';
   menFilter.style.background='white';
   menFilter.style.color='black';
+  kidsFilter.removeEventListener('click',showKidsProducts);
+  kidsFilter.addEventListener('click',unactiveKidsFilter);
+  womenFilter.addEventListener('click',showWomenProducts);
+  menFilter.addEventListener('click',showMenProducts);
 }
-
+function unactiveKidsFilter(event){
+  event.preventDefault();
+  kidsProduct.style.display='block';
+  kidsFilter.style.background='white';
+  kidsFilter.style.color='black';
+  womenProduct.style.display='block';
+  womenFilter.style.background='white';
+  womenFilter.style.color='black';
+  menProduct.style.display='block';
+  menFilter.style.background='white';
+  menFilter.style.color='black';
+  kidsFilter.addEventListener('click',showKidsProducts);
+}
