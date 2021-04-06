@@ -122,6 +122,7 @@ font-size: 28px;
 .subNav nav ul li i{
   font-weight: bolder;
   font-size: x-large;
+  
 }
 
 
@@ -147,7 +148,7 @@ font-size: 28px;
   
   .grid-item { 
     margin:0 10px;
-    height: 68%;
+    height: 75%;
     position: relative;
   }
   

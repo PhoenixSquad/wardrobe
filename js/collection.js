@@ -1,9 +1,12 @@
 'use strict';
 
 let addToCart = document.getElementsByClassName('addToCartBtn');
-let cartNum = document.querySelector('body > header > div > nav > ul > li:nth-child(2) > a');
+console.log(addToCart);
+let cartNum = document.querySelector('body > header > div > nav > ul > li:nth-child(3) > a');
 let list = [];
-
+let products = [];
+let grid = document.getElementsByClassName('grid-item');
+console.log(grid.length);
 for (let i = 0; i < addToCart.length; i++) {
   addToCart[i].addEventListener('click', function (e) {
     let item = {
@@ -41,10 +44,40 @@ for (let i = 0; i < addToCart.length; i++) {
 
 }
 let no = 0;
-JSON.parse(localStorage.getItem('name')).map(data=>{
-  no = no+data.quantity
-  ;	});
+JSON.parse(localStorage.getItem('name')).map(data => {
+  no = no + data.quantity
+  ;
+});
 cartNum.textContent = `Cart (${no})`;
 
+for (let i = 0; i < addToCart.length; i++) {
+  products.push({ productName: addToCart[i].parentElement.parentElement.children[1].textContent });
+}
+console.log(products);
 
 
+
+
+
+const searchBar = document.getElementById('searchBar');
+let upperContent = document.getElementsByClassName('upperContent');
+
+console.log();
+searchBar.addEventListener('keyup', search);
+function search() {
+  let input = searchBar.value;
+  input = input.toLowerCase();
+  console.log(input);
+
+  for (let i = 0; i < grid.length; i++) {
+
+    if (!grid[i].children[1].textContent.toLowerCase().includes(input)) {
+      grid[i].style.display = "none";
+      grid[i].parentElement.parentElement.children[0].style.display = 'none';
+    }
+    else {
+      grid[i].style.display = "block";
+      grid[i].style.width = 'fixed';
+    }
+  }
+}
