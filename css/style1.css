@@ -105,7 +105,10 @@ margin-left: 24%;
 font-size: 322%;
 background-color: rgb(255 255 255 / 50%);
 }
-
+.mySlides button:hover {
+  cursor: pointer;
+  
+}
 
 main h1#sentence{
 clear: both;
