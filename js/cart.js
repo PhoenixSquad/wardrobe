@@ -9,7 +9,7 @@ let purchases =JSON.parse(localStorage.getItem('name'));
 
 
 let remBtn=[];
-
+let addBtn=[];
 
 let tr1El=document.createElement('th');
 cartEl.append(tr1El);
@@ -18,6 +18,10 @@ tr1El.textContent= 'Name';
 let tr2El=document.createElement('th');
 cartEl.append(tr2El);
 tr2El.textContent= 'Price';
+
+let trEl=document.createElement('th');
+cartEl.append(trEl);
+
 let tr3El=document.createElement('th');
 cartEl.append(tr3El);
 tr3El.textContent= 'Quantity';
@@ -39,17 +43,23 @@ for (let i=0; i<purchases.length; i++){
   row.append(tdEl1);
   tdEl1.textContent= purchases[i].price;
 
+  remBtn = document.createElement('button');
+  row.appendChild(remBtn);
+  remBtn.setAttribute('class', 'buttonsClass1');
+  remBtn.setAttribute('id',`removeBtn${i}`);
+  remBtn.textContent = '-';
+  remBtn.addEventListener('click', remFun);
 
   let tdEl2= document.createElement('td');
   row.append(tdEl2);
   tdEl2.textContent= purchases[i].quantity;
 
-
-  remBtn = document.createElement('button');
-  row.appendChild(remBtn);
-  remBtn.setAttribute('id',`removeBtn${i}`);
-  remBtn.textContent = 'Remove Item';
-  remBtn.addEventListener('click', remFun);
+  addBtn = document.createElement('button');
+  row.appendChild(addBtn);
+  addBtn.setAttribute('class', 'buttonsClass2');
+  addBtn.setAttribute('id',`addBtn${i}`);
+  addBtn.textContent = '+';
+  addBtn.addEventListener('click',addFun);
 }
 
 
@@ -71,20 +81,26 @@ function remFun(event){
   for (let i=0; i<purchases.length; i++){
     if (event.target.id === `removeBtn${i}`){
       purchases[i].quantity = purchases[i].quantity-1;
-
     }
     if (Number(purchases[i].quantity) ===0 || Number(purchases[i].quantity) <0 ){
-
       removeLocalStorage(i);
     }
     localStorage.setItem('name',JSON.stringify(purchases));
     location.reload();
-
   }
-
-
-
 }
+
+function addFun(event){
+  for (let i=0; i<purchases.length; i++){
+    if (event.target.id === `addBtn${i}`){
+      purchases[i].quantity = purchases[i].quantity+1;
+    }
+    localStorage.setItem('name',JSON.stringify(purchases));
+    location.reload();
+  }
+}
+
+
 
 function removeLocalStorage(index){
   // let store = JSON.parse(localStorage.getItem("itemsArray")) || [];
