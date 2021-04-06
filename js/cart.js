@@ -91,3 +91,26 @@ function removeLocalStorage(index){
   purchases.splice(index, 1);
   localStorage.setItem('name', JSON.stringify(purchases));
 }
+
+/************************************************************ */
+/************************ Order message Js ******************** */
+/************************************************************ */
+
+const showMessageBtn =document.getElementById('showMessageBtn');
+const messageContainer=document.getElementById('messageContainer');
+const closeMessageBtn =document.getElementById('closeMessageBtn');
+console.log(showMessageBtn,messageContainer);
+showMessageBtn.addEventListener('click',showMessageForm);
+function showMessageForm(event){
+  event.preventDefault();
+  messageContainer.style.visibility='visible';
+  messageContainer.style.opacity='1';
+  closeMessageBtn.addEventListener('click',closeFormFunction);
+
+}
+function closeFormFunction(){
+  event.preventDefault();
+  messageContainer.style.visibility='hidden';
+  messageContainer.style.opacity='0';
+
+}
