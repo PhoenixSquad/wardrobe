@@ -80,6 +80,9 @@ i a {
 .fa-github{
     color: inherit;
 }
+.socialMedia .fa-facebook ,.socialMedia .fa-linkedin {
+    color:#385898;
+}
 .memberImg img {
     height: 150px;
     width: 150px;
@@ -91,6 +94,7 @@ i a {
 .right .memberDesc {
     width: inherit;
     margin-right: 10px;
+    margin-left: 577px;
  }
 .right {
     display: flex;
