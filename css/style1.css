@@ -106,18 +106,6 @@ font-size: 322%;
 background-color: rgb(255 255 255 / 70%);
 }
 
-/* main h1#sentence{
-  clear: both;
-  font-family: 'Tangerine', cursive;
-  font-size: 50px;
-  text-align: center;
-  font-weight: bolder;
-  margin-bottom: 1%;
-    color: #284b63;
-  margin-top:  50px;
-  margin-bottom: 30px;
-} */
-
 
 main h1#sentence{
 clear: both;
@@ -367,17 +355,12 @@ z-index: 10;
 }
 
 .text  {
-text-shadow: 2px 0 20px rgb(0, 0, 0);
-font-size: 50px;
-font-weight: bold;
-position: absolute;
-top: 191px;
-left: 42%;
--webkit-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
-text-align: center;
-font-family: 'Shadows Into Light', cursive;
+  position: absolute;
+  text-align: center;
+  top: 22%;
+  margin-left: 26%;
+  font-size: 294%;
+  color: rgb(0 0 0 / 67%);;
 }
 body > main > div.container > div > a{
 text-decoration: none;
@@ -745,7 +728,6 @@ margin-left: 20px;
 color: inherit;
 }
 .iconsDiv a i{
-<<<<<<< HEAD
   margin: 3px;
   /* color: inherit; */
 }
@@ -782,7 +764,6 @@ color: inherit;
   background-position-y: 45%;
   background-position-x: -20%;
   background-color: rgba(255, 255, 255, 0.692);
-=======
 margin: 3px;
 /* color: inherit; */
 }
@@ -812,5 +793,4 @@ body > footer > div > div > div.rightFooterContainer > div > div.footerDesc
   font-size: 22px;
   margin: 20px;
   width: 120%;
->>>>>>> 46cf528f11584aba674730cd082c64a82e0e0594
 }
