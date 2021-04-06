@@ -252,6 +252,7 @@ animation-iteration-count: infinite;
   margin-top: 2%;
  
 }
+
 .container1 {
 width: 29%;
 height: 375px;
@@ -913,4 +914,10 @@ body > footer > div > div > div.rightFooterContainer > div > div.footerDesc
 .messageFormLogo{
     width: 40%;
     height: 30%;
+}
+
+
+#itemList td{
+  text-align: center;
+    font-size: x-large;
 }
