@@ -12,6 +12,7 @@ function showMenProducts(event){
   event.preventDefault();
   menProduct.style.display='block';
   menFilter.style.background='#284b6396';
+ 
   womenProduct.style.display='none';
   womenProduct.style.padding='0px';
   womenFilter.style.background='white';
@@ -24,6 +25,7 @@ function showWomenProducts(event){
   event.preventDefault();
   womenProduct.style.display='block';
   womenFilter.style.background='#284b6396';
+
   menProduct.style.display='none';
   menFilter.style.background='white';
   menFilter.style.padding='0px';
