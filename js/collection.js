@@ -72,12 +72,11 @@ function search() {
   for (let i = 0; i < grid.length; i++) {
 
     if (!grid[i].children[1].textContent.toLowerCase().includes(input)) {
-      grid[i].style.display = "none";
+      grid[i].style.display = 'none';
       grid[i].parentElement.parentElement.children[0].style.display = 'none';
     }
     else {
-      grid[i].style.display = "block";
-      grid[i].style.width = 'fixed';
+      grid[i].style.display = 'block';
     }
   }
 }
