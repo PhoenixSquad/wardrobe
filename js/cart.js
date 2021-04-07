@@ -32,7 +32,7 @@ if (purchases.length !== 0){
   txtEl.textContent = 'Your Cart is empty!';
   let imgEl =document.createElement('img');
   cartEl.appendChild(imgEl);
-  imgEl.src = 'https://listimg.pinclipart.com/picdir/s/201-2018325_img-empty-shopping-cart-gif-clipart.png';
+  imgEl.src = 'https://www.pinclipart.com/picdir/big/201-2018325_check-mark-clip-art-free.png';
   document.getElementById('submitBtn').style.display = "none";
 }
 
