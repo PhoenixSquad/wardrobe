@@ -10,8 +10,11 @@ let purchases =JSON.parse(localStorage.getItem('name'));
 
 let remBtn=[];
 let addBtn=[];
-console.log();
-if (purchases.length !== 0){
+// console.log(purchases[0]);
+if (purchases == null){
+  purchases = [];
+}
+if (purchases.length !== 0 ){
   let tr1El=document.createElement('th');
   cartEl.append(tr1El);
   tr1El.textContent= 'Name';
@@ -22,7 +25,6 @@ if (purchases.length !== 0){
 
   let trEl=document.createElement('th');
   cartEl.append(trEl);
-
   let tr3El=document.createElement('th');
   cartEl.append(tr3El);
   tr3El.textContent= 'Quantity';
@@ -35,7 +37,6 @@ if (purchases.length !== 0){
   imgEl.src = 'https://www.pinclipart.com/picdir/big/201-2018325_check-mark-clip-art-free.png';
   document.getElementById('submitBtn').style.display = "none";
 }
-
 
 
 for (let i=0; i<purchases.length; i++){
@@ -84,7 +85,6 @@ function submitFun(){
 }
 
 
-console.log(remBtn);
 
 function remFun(event){
   for (let i=0; i<purchases.length; i++){
@@ -134,8 +134,10 @@ function showMessageForm(event){
 
 }
 function closeFormFunction(){
-  event.preventDefault();
   messageContainer.style.visibility='hidden';
   messageContainer.style.opacity='0';
-
+  localStorage.clear();
+  // purchases =[];
+  location.reload();
+  // basicRender();
 }
