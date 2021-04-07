@@ -684,11 +684,14 @@ float: left;
 border: solid;
 border-radius: 20px;
 padding: 1.5%;
-/* font-family: 'Shadows Into Light', cursive; */
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 margin-bottom: 3%;
 font-size: 28.5px;
 color: #284b63;
 font-weight: bold;
+background-image: url(https://img.freepik.com/free-vector/vintage-ornamental-flowers-background_52683-28040.jpg?size=626&ext=jpg&ga=GA1.2.131397935.1596153600);
+background-size: contain;
+border-color: black;
 
 }
 
@@ -860,12 +863,18 @@ color: inherit;
   margin-top: 10px;
 }
 .leftColumn{
-  background-image: url(https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1613243555988-441166d4d6fd%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjE3MDYzNjUz%26ixlib%3Drb-1.2.1%26q%3D80%26w%3D1080);
+  /* background-image: url(https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1613243555988-441166d4d6fd%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjE3MDYzNjUz%26ixlib%3Drb-1.2.1%26q%3D80%26w%3D1080); */
+  background-image: url(https://img.freepik.com/free-vector/vintage-ornamental-flowers-background_52683-28040.jpg?size=626&ext=jpg&ga=GA1.2.131397935.1596153600);
   background-position-y: 45%;
   background-position-x: -20%;
-  background-color: rgba(255, 255, 255, 0.692);
-margin: 3px;
+  margin: 3px;
+  background-size: contain ;
 /* color: inherit; */
+}
+.leftColumn h3{
+  font-size: 35px;
+  margin-top: 40px;
+  color: #284b63;
 }
 
 body > footer > div > div > div.rightFooterContainer > div > div.iconsDiv{

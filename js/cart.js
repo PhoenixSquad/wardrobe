@@ -10,22 +10,27 @@ let purchases =JSON.parse(localStorage.getItem('name'));
 
 let remBtn=[];
 let addBtn=[];
+console.log();
+if (purchases.length !== 0){
+  let tr1El=document.createElement('th');
+  cartEl.append(tr1El);
+  tr1El.textContent= 'Name';
 
-let tr1El=document.createElement('th');
-cartEl.append(tr1El);
-tr1El.textContent= 'Name';
+  let tr2El=document.createElement('th');
+  cartEl.append(tr2El);
+  tr2El.textContent= 'Price';
 
-let tr2El=document.createElement('th');
-cartEl.append(tr2El);
-tr2El.textContent= 'Price';
+  let trEl=document.createElement('th');
+  cartEl.append(trEl);
 
-let trEl=document.createElement('th');
-cartEl.append(trEl);
-
-let tr3El=document.createElement('th');
-cartEl.append(tr3El);
-tr3El.textContent= 'Quantity';
-
+  let tr3El=document.createElement('th');
+  cartEl.append(tr3El);
+  tr3El.textContent= 'Quantity';
+} else{
+  let txtEl = document.createElement('h3');
+  cartEl.appendChild(txtEl);
+  txtEl.textContent = 'Your Cart is empty! Checkout our collection page';
+}
 
 
 
