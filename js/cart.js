@@ -29,7 +29,11 @@ if (purchases.length !== 0){
 } else{
   let txtEl = document.createElement('h3');
   cartEl.appendChild(txtEl);
-  txtEl.textContent = 'Your Cart is empty! Check out our collection page';
+  txtEl.textContent = 'Your Cart is empty!';
+  let imgEl =document.createElement('img');
+  cartEl.appendChild(imgEl);
+  imgEl.src = 'https://listimg.pinclipart.com/picdir/s/201-2018325_img-empty-shopping-cart-gif-clipart.png';
+  document.getElementById('submitBtn').style.display = "none";
 }
 
 
