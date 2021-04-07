@@ -14,4 +14,16 @@ function showSlides() {
   slides[slideIndex-1].style.display = 'block';
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
-
+// let myNav = document.getElementsByClassName('navBar');
+// console.log(myNav);
+// window.onscroll = function () { 
+  
+//   if (document.body.scrollTop >= 10 ) {
+//     myNav[0].classList.add('nav-colored');
+//     myNav[0].classList.remove('nav-transparent');
+//   }
+//   else {
+//     myNav[0].classList.add('nav-transparent');
+//     myNav[0].classList.remove('nav-colored');
+//   }
+// };

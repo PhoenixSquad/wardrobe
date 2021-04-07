@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 'use strict';
 
 let addToCart = document.getElementsByClassName('addToCartBtn');
@@ -25,7 +26,8 @@ for (let i = 0; i < addToCart.length; i++) {
 
     else {
 
-      const storageList = JSON.parse(localStorage.getItem('name'));
+
+
       storageList.map(data => {
         if (item.id === data.id) {
           item.quantity = data.quantity + 1;
@@ -44,10 +46,15 @@ for (let i = 0; i < addToCart.length; i++) {
 
 }
 let no = 0;
-JSON.parse(localStorage.getItem('name')).map(data => {
-  no = no + data.quantity
-  ;
-});
+const storageList = JSON.parse(localStorage.getItem('name'));
+if (storageList !== null) {
+
+
+  JSON.parse(localStorage.getItem('name')).map(data => {
+    no = no + data.quantity
+      ;
+  });
+}
 cartNum.textContent = `Cart (${no})`;
 
 for (let i = 0; i < addToCart.length; i++) {
@@ -73,7 +80,7 @@ function search() {
 
     if (!grid[i].children[1].textContent.toLowerCase().includes(input)) {
       grid[i].style.display = 'none';
-      grid[i].parentElement.parentElement.children[0].style.display = 'none';
+      // grid[i].parentElement.parentElement.children[0].style.display = 'none';
     }
     else {
       grid[i].style.display = 'block';
