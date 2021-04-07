@@ -29,7 +29,7 @@ if (purchases.length !== 0){
 } else{
   let txtEl = document.createElement('h3');
   cartEl.appendChild(txtEl);
-  txtEl.textContent = 'Your Cart is empty! Checkout our collection page';
+  txtEl.textContent = 'Your Cart is empty! Check out our collection page';
 }
 
 
