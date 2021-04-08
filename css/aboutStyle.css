@@ -1,0 +1,168 @@
+
+body{
+    width: 100%;
+}
+main {
+    margin: 0;
+    width: 90%;
+    margin: 0 auto;
+   padding-top: 0;
+}
+
+
+.aboutMainContent{
+    width: 80%;
+    margin: 0 auto;
+   padding: 20px;
+}
+ .heroImage{
+    background-image: url(../img/aboutUsImg.jpg) ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+}
+.centered{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.685);
+    width: 100%;
+    height: 100%;
+}
+.centered span{
+    font-family: 'Tangerine', cursive;
+    font-weight: 900;
+    position: absolute;
+    top: 37%;
+    left: 45%;
+    color: white;
+    font-size: 6em;
+    text-align: center;
+    
+}
+
+.aboutDescription p{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'COURGETTE', 'Times New Roman', Times, serif;
+}
+.aboutDescription p strong{
+    font-weight: bold;
+}
+#aboutLogoImg {
+    width: 20%;
+    position: relative;
+    left: 41%;
+}
+.left {
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+.left .socialMedia {
+   margin-top: 10px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-evenly;
+   margin-right: 20px;
+}
+.right .socialMedia {
+    margin-left: 10px;
+     height: 130px;
+     display: flex;
+     flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 20px;
+ }
+i a {
+    text-decoration: none;
+    
+}
+.fa-github{
+    color: inherit;
+}
+.socialMedia .fa-facebook ,.socialMedia .fa-linkedin {
+    color:#385898;
+}
+.memberImg img {
+    height: 150px;
+    width: 150px;
+}
+.left .memberDesc {
+   margin-left: 10px;
+   width: inherit;
+}
+.right .memberDesc {
+    width: inherit;
+    margin-right: 10px;
+    margin-left: 577px;
+ }
+.right {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+justify-content: center;
+
+  
+}
+.socialMedia i:hover {
+    transform: scale(1.5);
+}
+
+  hr {
+      margin: 50px auto;
+  }
+  .left , .right {
+      width: 75%;
+      margin: 0 auto;
+  }
+
+  .memberDesc p{
+    font-size: 1.3rem;
+    /* font-weight: 700; */
+    padding: 5px;
+    font-style: italic;
+  }
+  .memberMajor{
+      font-style: italic;
+  }
+  .memberDesc p strong{
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-style: initial;
+  }
+
+ .meberEmail {
+     font-style: italic;
+     
+ }
+
+  body > footer > div > div > div.rightFooterContainer > div > div.iconsDiv{
+
+    color: rgb(228, 228, 228);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  body > footer > div > div > div.rightFooterContainer > div > div.footerDesc
+  {
+    color: rgb(228, 228, 228);
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-size: 22px;
+    margin: 20px;
+    width: 120%;
+  }

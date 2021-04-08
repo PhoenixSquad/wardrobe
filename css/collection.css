@@ -1,0 +1,272 @@
+html{
+    width: 100%;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+body {
+ box-sizing: border-box;
+}
+main{
+ width: 95%;
+}
+/* .collectionNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.collectionNav ul img {
+  float: left;
+  margin-top: -20px;
+  
+}
+.collectionNav li {
+  float: right;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+.collectionNav li a {
+  display: block;
+  text-align: center;
+  /* padding: 16px 18px; */
+  /* text-decoration: none;
+  margin-top: 30px;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  color: rgb(85, 84, 84);
+  padding: 20px;
+
+} */
+
+
+/* .collectionNav li a:hover {
+
+
+text-decoration: underline;
+color: #284b63f6;
+font-size: 28px;
+
+
+}  */
+
+
+
+.subNav nav{
+  width: 27%;
+  margin: auto;
+  margin-bottom: 100px;
+  /* background-color: red; */
+  box-shadow: 0px 2px 4px #00000061;
+  height: fit-content;
+  text-align: center;
+
+}
+
+.subNav nav ul li a:hover {
+  background-color: #284b63;
+  border-radius: 3px;
+  text-decoration: underline ;
+  font-size: 25px;
+  color: white;
+  /* padding: 15px; */
+
+}
+
+
+
+
+
+
+.subNav nav ul{
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  border-top: #284b6396 3px solid;
+  border-right: #284b6396 3px solid;
+  border-left: #284b6396 3px solid;
+  
+  
+  
+}
+.subNav nav ul li{
+  list-style: none;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 4px;
+  padding: 3px;
+  display: contents;
+}
+.subNav nav ul li a{
+  /* float: left; */
+  /* margin: 5px 30px; */
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Shadows Into Light', cursive;
+  padding: 10px 15px;
+}
+
+
+.subNav nav ul li i{
+  font-weight: bolder;
+  font-size: x-large;
+  
+}
+
+
+.upperContent {
+  padding: 10px;
+  margin: 0 10px;
+}
+.upperContent h1 {
+  font-size:3em;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+}
+
+
+  .products {
+    display: grid;
+    grid-template-columns: 33.33333% 33.333333% 33.333333%;
+   
+    
+    
+    padding: 10px;
+  }
+  
+  .grid-item { 
+    margin:0 10px;
+    
+    position: relative;
+  }
+  
+  .grid-item .imgBox{
+    height: 75%;
+    
+  }
+  .grid-item .imgBox img{
+    width: 100%;
+    height: 100%;
+   
+
+  }
+
+  .grid-item .imgBox img:hover {
+    box-shadow: 0px 0px 10px #00000094;
+   
+  }
+
+
+
+
+
+
+
+ .grid-item .desc {
+  /* position: absolute; */
+  left: 1%;
+  bottom: 0%;
+  margin: 10px;
+  font-weight: 900;
+  font-size: 1.4em ; 
+    max-width: 60%;
+    transform: scale(1);
+}
+
+.price-addToCartBtn {
+  position: absolute;
+  text-align: center;
+  right: 0.3%;
+  bottom:25%;
+  font-weight: 700;
+  font-size: 1.9em;
+transform: scale(0);
+}
+/* .grid-item:hover .desc {
+  transform: scale(0);
+} */
+.grid-item:hover .price-addToCartBtn {
+  transform:scale(1) ;
+  
+}
+.addToCartBtn button {
+  font-weight: 600;
+font-size: 0.5em;
+padding: 5px 18px;
+height: 35px;
+color: rgba(255, 255, 255, 0.829);
+background-color: rgba(29, 29, 29, 0.76);
+
+}
+.addToCartBtn button:hover {
+  color: white;
+  background-color: black;
+}
+
+
+
+/* .price{
+  display: block;
+}
+#womenProduct > div.products > div:nth-child(1)  .price-addToCartBtn {
+  display: none;
+}
+/* .price-addToCartBtn{
+  width: 100%;
+  height:100%;
+  top: 50%;
+
+} */
+/* #womenProduct > div.products > div:nth-child(1):hover .price-addToCartBtn{
+position:absolute;
+  /* transition: all 5s ease; */
+  /* display:block;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-color:rgba(0, 0, 0, 0.815);
+  transition-property:background;
+  transition-duration: 2.5s; */ 
+
+/* } */
+
+
+body > footer > div > div > div.rightFooterContainer > div > div.iconsDiv{
+
+  color: rgb(228, 228, 228);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width: 100%;
+  margin-left: 20px;
+}
+
+body > footer > div > div > div.rightFooterContainer > div > div.footerDesc
+{
+  color: rgb(228, 228, 228);
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  font-size: 22px;
+  margin: 20px;
+  width: 120%;
+}
